@@ -16,19 +16,44 @@
                     <img src="dist/img/Logo.svg" alt="Logo akudika" class="block py-6 w-24">
                 </div>
                 <div class="flex items-center px-4">
-                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4">
+
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
                         <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
                         <span class="hamburger-line transition duration-300 ease-in-out"></span>
                         <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
                     </button>
+
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#about" class="uppercase text-base text-slate-950 py-2 mx-5 flex group-hover:text-blue-600">About</a>
+                            </li>
+                            <li class="group">
+                                <a href="#project" class="uppercase text-base text-slate-950 py-2 mx-5 flex group-hover:text-blue-600">project</a>
+                            </li>
+                            <li class="group">
+                                <a href="#jurney" class="uppercase text-base text-slate-950 py-2 mx-5 flex group-hover:text-blue-600">jurney</a>
+                            </li>
+                            <li class="group">
+                                <a href="#blog" class="uppercase text-base text-slate-950 py-2 mx-5 flex group-hover:text-blue-600">blog</a>
+                            </li>
+                        </ul>
+                    </nav>
+
                 </div>
             </div>
         </div>
     </header>
     <!-- Navbar end -->
 
+    <!-- background image -->
+    <div class="relative">
+        <img src="dist/img/bg-hero.png" alt="bg-hero" class="absolute opacity-10 w-full h-screen hidden md:block">
+    </div>
+    <!-- background image -->
+
     <!-- Hero section start -->
-    <section id="hero" class="pt-20 pb-10">
+    <section id="hero" class="pt-24 pb-10 lg:pb-0">
         <div class="container lg:px-24">
             <div class="flex flex-wrap">
                 <div class="w-full self-start px-4 lg:w-1/2">
@@ -41,10 +66,10 @@
                     </div>
                 </div>
 
-                <div class="w-full self-center px-4 lg:w-1/2 lg:px-10">
+                <div class="w-full self-center px-4 lg:-mt-10 lg:w-1/2 lg:px-8">
                     <p class="text-xl">--Hello👨‍🎓</p>
-                    <h1 class="font-normal text-primary text-5xl mb-3 lg:text-7xl">i'm, <span class="font-bold">Mudrika</span></h1>
-                    <p class="text-sm leading-relaxed mb-6 lg:text-lg">I am a student who has some work experience. I have the skills to be a front-end developer & am used to using figma as a design software.</p>
+                    <h1 class="font-normal text-primary text-5xl mb-3 lg:text-6xl">i'm, <span class="font-bold">Mudrika</span></h1>
+                    <p class="text-sm leading-relaxed text-justify mb-6 lg:text-lg">I am a student who has some work experience. I have the skills to be a front-end developer & am used to using figma as a design software.</p>
 
                     <a href="" class="text-base text-primary py-2 px-8 rounded-full border border-primary hover:bg-primary hover:text-slate-50 hover:shadow-lg transition duration-300 ease-in-out">Download CV</a>
 
@@ -63,6 +88,21 @@
         </div>
     </section>
     <!-- Hero section end -->
+
+    <!-- Footer start -->
+    <footer class="mb-5">
+        <div class="container">
+            <div class="flex flex-wrap place-content-center lg:place-content-start">
+                <div class="mr-2"><p>Create Using:</p></div>
+                <div>
+                    <a href="https://tailwindcss.com">
+                        <img src="dist/img/tailwind.svg" alt="tailwind">
+                    </a>
+                </div>   
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
 
     <script src="dist/js/script.js"></script>
 </body>
