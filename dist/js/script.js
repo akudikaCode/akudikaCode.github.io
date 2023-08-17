@@ -18,3 +18,10 @@ hamburger.addEventListener('click', function() {
     hamburger.classList.toggle('hamburger-active');
     navMenu.classList.toggle('hidden');
 });
+
+window.addEventListener('click', function (e) {
+    if(e.target != hamburger && e.target != navMenu){
+        hamburger.classList.toggle('hamburger-active');
+        navMenu.classList.add('hidden');
+    }
+})
