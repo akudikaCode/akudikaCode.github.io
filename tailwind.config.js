@@ -1,17 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['index.html'],
+  content: ["index.html"],
+  darkMode: "class",
   theme: {
-    container:{
+    container: {
       center: true,
-      padding: '20px',
+      padding: "20px",
     },
     extend: {
       colors: {
-        primary: '#1D1D1D',
+        primary: "#1D1D1D",
       },
     },
   },
   plugins: [],
-}
-
+};
